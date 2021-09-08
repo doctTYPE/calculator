@@ -7,7 +7,7 @@ const result = document.getElementById('text')
 let calculate = (num) =>{ 
   
   result.value += num;
- 
+  
 };
 
 
@@ -17,7 +17,7 @@ let calculate = (num) =>{
 
 function cance(){
   result.value = result.value.slice(0 , -1)
-  
+
 }
 
 
