@@ -26,5 +26,14 @@ function cancel() {
   result.value = " "
   
 }
+function egual(){
+  try{
+    result.value = eval(result.value)
+    
+    
+  }
+  catch(err){
+    alert("invalid imput")
+  }
+}
 
-   
