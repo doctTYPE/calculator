@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-size: 15pt;
+    font-family: Poppins;
+    background: rgba(61,219,132)
+  
+}
+
+
+.calculator{
+  position: absolute;
+  z-index: -100;
+  height: 957px;
+  width: 779px;
+  left: 306px;
+  top: 145px;
+  border-radius: 0px;
+  background: white;
+  box-shadow: 27px 28px 28px 27px rgba(0,0,0,0.25 );
+}
+
+.display{
+  /*position: absolute;*/
+  width: 779px;
+  height: 147px;
+  /*left: 307px;*/
+  /*top: 144px;*/
+  background: #ECE8E8;
+  font-family: Poppins;
+  font-family: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 144px;
+  color: darkturquoise;
+  text-align: right;
+  border: none;
+  display: block;
+  z-index: 1000000000000;
+}
+.num{
+  position: absolute;
+  width: 63px;
+  height: 144px;
+  left: 1002px;
+  top: 152px;
+  font-family: Poppins;
+  font-family: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 144px;
+  color: black;
+  z-index: 10;
+}
+
+.cans-btn{
+  position:absolute;
+  width: 406px;
+  height: 134px;
+  left : 307px;
+  top: 310px;
+  background: #FF6363;
+  border-radius: 16px;
+  border: none;
+  font-size: 96px;
+  color: white;
+  font-family: Poppins;
+  text-align: center;
+  justify-content: center;
+  
+} 
+.cans {
+  position: absolute;
+  height: 107px;
+  width: 100px;
+  left: 754px;
+  top: 319px;
+  border-radius: 15px;
+  background: #FFC632;
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 80px;
+}
+
+.del{
+  position: absolute;
+  width: 315px;
+  height: 144px;
+  left: 454px;
+  top: 305px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height:144px;
+  color: white;
+}
+
+
+.btn-egual{
+  position: absolute;
+  width: 415px;
+  height: 124px;
+  left: 671px;
+  top: 952px;
+  
+  background: #00FF47;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  font-size: 96px;
+}
+
+.btn-7{
+  background:#0085FF;
+  position: absolute;
+  width: 144px;
+  height: 134px;
+  top: 463px;
+  left: 307px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  
+}
+
+.btn-8{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 463px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 96px;
+  border: none;
+  color: white;
+  background: #0085FF;
+  
+
+}
+
+.btn-9{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 671px;
+  top: 468px;
+  border-radius: 15px;
+  border:none;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+
+}
+.btn-4{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 307px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+.btn-5{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+.btn-6 {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 671px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+
+.btn-1 {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 307px;
+  top: 784px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+.btn-2 {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 789px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+.btn-3 {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 671px;
+  top: 789px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+.btn-0 {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 952px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+
+.btn-plus {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 784px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+
+.btn-minus {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+
+.btn-x {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 468px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+.btn-b{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 310px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #0085FF;
+  border: none;
+}
+
+
+/* hover effect on button*/
+
+
+.cans-btn:hover{
+  position:absolute;
+  width: 406px;
+  height: 134px;
+  left : 307px;
+  top: 310px;
+  background: #FF4040;
+  border-radius: 16px;
+  border: none;
+  font-size: 96px;
+  color: white;
+  font-family: Poppins;
+  text-align: center;
+  justify-content: center;
+  
+} 
+
+.del{
+  position: absolute;
+  width: 315px;
+  height: 144px;
+  left: 454px;
+  top: 305px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height:144px;
+  color: black;
+}
+
+
+.btn-egual:hover{
+  position: absolute;
+  width: 415px;
+  height: 124px;
+  left: 671px;
+  top: 952px;
+  
+  background:#00C236;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  font-size: 96px;
+}
+
+.btn-7:hover{
+  background:#006ACC;
+  position: absolute;
+  width: 144px;
+  height: 134px;
+  top: 463px;
+  left: 307px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  
+}
+
+.btn-8:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 463px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 96px;
+  border: none;
+  color: white;
+  background: #006ACC;
+  
+
+}
+
+.btn-9:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 671px;
+  top: 468px;
+  border-radius: 15px;
+  border:none;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+
+}
+.btn-4:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 307px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+.btn-5:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+.btn-6:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 671px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+
+.btn-1:hover {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 307px;
+  top: 784px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+.btn-2:hover {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 789px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+.btn-3:hover {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 671px;
+  top: 789px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+.btn-0:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 489px;
+  top: 952px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+
+.btn-plus:hover {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 784px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC; 
+  border: none;
+}
+
+
+.btn-minus:hover {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 626px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
+
+
+.btn-x:hover {
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 468px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background:#006ACC;
+  border: none;
+}
+
+.btn-b:hover{
+  position: absolute;
+  height: 134px;
+  width: 144px;
+  left: 942px;
+  top: 310px;
+  border-radius: 15px;
+  color: white;
+  font-size: 96px;
+  background: #006ACC;
+  border: none;
+}
